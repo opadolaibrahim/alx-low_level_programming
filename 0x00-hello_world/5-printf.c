@@ -1,12 +1,15 @@
 /**
-* main - program that prints with proper grammer,but the outcome is
-*  a piece of art,followed by a new line
-* return (0) success
+ * main - Prints "with proper grammar, but the outcome is
+ *                a piece of art," followed by a new line.
+ *
+ * Return: 0.
  */
 
 #include <stdio.h>
+
 int main(void)
 {
 	printf("with proper grammar, but the outcome is a piece of art,\n");
+
 	return (0);
 }
