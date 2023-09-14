@@ -1,2 +1,2 @@
-ALX Coding Challenges
-Welcome to the ALX Coding Challenges repository! Here, you'll find a collection of programming tasks designed to test your coding skills. Each task has specific requirements that you need to follow. Feel free to contribute your solutions and collaborate with others.
+#ALX Coding Challenges
+Welcome to my ALX Coding Challenges repository! Here, you'll find a collection of programming tasks completed. Each task has specific requirements followed. Feel free to contribute your solutions and collaborate with others.
