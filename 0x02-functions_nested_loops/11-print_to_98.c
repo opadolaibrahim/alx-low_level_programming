@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 
 /**
@@ -5,7 +6,8 @@
  *               in order separated by a comma followed by a space.
  * @n: The number to begin counting at.
  */
-
+int main(void)
+{
 void print_to_98(int n)
 {
 	if (n >= 98)
@@ -21,4 +23,6 @@ void print_to_98(int n)
 			printf("%d, ", n++);
 		printf("%d\n", n);
 	}
+}
+return (0);
 }
