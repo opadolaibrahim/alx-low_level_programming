@@ -2,35 +2,44 @@
 #include <stdlib.h>
 
 /**
-  * _strdup - Duplicate a string
-  * @str: the string to duplicate
-  *
-  * Return: the string duplicated
-  */
-char *_strdup(char *str)
+ * argstostr - Concatenates all arguments of the program into a string;
+ *             arguments are separated by a new line in the string.
+ * @ac: The number of arguments passed to the program.
+ * @av: An array of pointers to the arguments.
+ *
+ * Return: If ac == 0, av == NULL, or the function fails - NULL.
+ *         Otherwise - a pointer to the new string.
+ */
+char *argstostr(int ac, char **av)
 {
-	int a = 0, i = 1;
-	char *s;
+	char *str;
+	int arg, byte, index, size = ac;
+
+	if (ac == 0 || av == NULL)
+		return (NULL);
+
+	for (arg = 0; arg < ac; arg++)
+	{
+		for (byte = 0; av[arg][byte]; byte++)
+			size++;
+	}
+
+	str = malloc(sizeof(char) * size + 1);
 
 	if (str == NULL)
 		return (NULL);
 
-	while (str[i])
+	index = 0;
+
+	for (arg = 0; arg < ac; arg++)
 	{
-		i++;
+		for (byte = 0; av[arg][byte]; byte++)
+			str[index++] = av[arg][byte];
+
+		str[index++] = '\n';
 	}
 
-	s = malloc((sizeof(char) * i) + 1);
+	str[size] = '\0';
 
-	if (s == NULL)
-		return (NULL);
-
-	while (a < i)
-	{
-		s[a] = str[a];
-		a++;
-	}
-
-	s[a] = '\0';
-	return (s);
+	return (str);
 }
