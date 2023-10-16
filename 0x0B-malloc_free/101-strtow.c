@@ -1,7 +1,4 @@
-#include <stdlib.h>
-#include <string.h>
-
-#include "holberton.h"
+#include "main.h"
 #include <stdlib.h>
 
 int word_len(char *str);
