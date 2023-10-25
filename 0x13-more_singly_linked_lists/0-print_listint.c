@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdio.h>
 /**
  * print_listint -  Display all elements of a linked list.
  * @h: Pointer to the first node of the linked list.
