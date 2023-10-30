@@ -1,5 +1,11 @@
 #include "main.h"
-
+/**
+ * main - cpy the file content to another file
+ * @argc: number of arg passed to the program
+ * @argv: arr of arg
+ *
+ * Return: Always 0 (Success)
+ */
 int main(int argc, char *argv[])
 {
 	int fd_r, fd_w, a, b, i, j;
